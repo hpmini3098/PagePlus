@@ -11,7 +11,6 @@
 		65A3E16A1763279600D4EDF1 /* FrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E1691763279600D4EDF1 /* FrameAccessor.m */; };
 		65AA0418176885D5009DEB56 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AA0416176885D5009DEB56 /* 2.png */; };
 		65AA0419176885D5009DEB56 /* 2@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AA0417176885D5009DEB56 /* 2@2X.png */; };
-		65C9DCF71775E6F700992D1A /* PagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C9DCF61775E6F700992D1A /* PagesView.m */; };
 		65DC31181764623B009C967F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC311617646230009C967F /* QuartzCore.framework */; };
 		65F9EE631762DA1300E61999 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F9EE621762DA1300E61999 /* UIKit.framework */; };
 		65F9EE651762DA1300E61999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F9EE641762DA1300E61999 /* Foundation.framework */; };
@@ -48,8 +47,6 @@
 		65A3E1691763279600D4EDF1 /* FrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameAccessor.m; sourceTree = "<group>"; };
 		65AA0416176885D5009DEB56 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = PagePlusSample/Resources/2.png; sourceTree = "<group>"; };
 		65AA0417176885D5009DEB56 /* 2@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2@2X.png"; path = "PagePlusSample/Resources/2@2X.png"; sourceTree = "<group>"; };
-		65C9DCF51775E6F700992D1A /* PagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PagesView.h; path = ../../Source/PagesView.h; sourceTree = "<group>"; };
-		65C9DCF61775E6F700992D1A /* PagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PagesView.m; path = ../../Source/PagesView.m; sourceTree = "<group>"; };
 		65DC311617646230009C967F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		65F9EE5F1762DA1300E61999 /* PagePlusSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagePlusSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F9EE621762DA1300E61999 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -193,8 +190,6 @@
 		65F9EE9D1762DA2800E61999 /* PagePlusView */ = {
 			isa = PBXGroup;
 			children = (
-				65C9DCF51775E6F700992D1A /* PagesView.h */,
-				65C9DCF61775E6F700992D1A /* PagesView.m */,
 				6564A587177EF92300E97BB6 /* Pages.h */,
 				6564A588177EF92300E97BB6 /* Pages.m */,
 			);
@@ -317,7 +312,6 @@
 				65F9EE731762DA1300E61999 /* AppDelegate.m in Sources */,
 				65F9EE7F1762DA1300E61999 /* ViewController.m in Sources */,
 				65A3E16A1763279600D4EDF1 /* FrameAccessor.m in Sources */,
-				65C9DCF71775E6F700992D1A /* PagesView.m in Sources */,
 				6564A589177EF92300E97BB6 /* Pages.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
