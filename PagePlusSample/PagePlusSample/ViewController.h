@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PagesView.h"
-@interface ViewController : UIViewController<PagesDelegate>
-@property(nonatomic, strong) Pages *pages;
+#import "Pages.h"
+@interface ViewController : UIViewController <PagesDelegate, PagesDataSource> {
+	NSMutableArray *_pageViews;
+}
+@property (nonatomic, strong) Pages *pages;
 @end
