@@ -39,7 +39,7 @@
 
 - (void)setY:(CGFloat)newY {
 	CGRect newFrame = self.frame;
-	newFrame.origin.x = newY;
+	newFrame.origin.y = newY;
 	self.frame = newFrame;
 }
 
@@ -112,7 +112,7 @@
 #pragma mark - Pages
 #define SLIDE_WIDTH 80.0
 #define SLIDE_DONE_X 60.0
-#define FRAME_OFFSET 15.0
+#define FRAME_OFFSET 30.0
 @implementation Pages
 
 - (id)initWithFrame:(CGRect)frame {
@@ -197,6 +197,9 @@
         }
 	} completion: ^(BOOL finished) {
 	}];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pageWillChanged:)]) {
+        [self.delegate pageWillChanged:self];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -260,6 +263,9 @@
 	if (fromIndex < 0 || toIndex < 0 || fromIndex == toIndex) {
 		return;
 	}
+    if (self.delegate) {
+        [self.delegate pages:self fromIndex:fromIndex toIndex:toIndex];
+    }
 	if (self.dataSource) {
 		[self insertPageAtIndex:toIndex - 1];
 		[self insertPageAtIndex:toIndex];

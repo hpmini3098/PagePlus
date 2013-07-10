@@ -46,8 +46,10 @@ typedef enum PullFlag : NSUInteger {
 - (UIView *)pages:(Pages *)page viewForindex:(int)index;
 @end
 @protocol PagesDelegate <NSObject>
+
 - (void)pages:(Pages *)pages fromIndex:(int)fromIndex toIndex:(int)toIndex;
 @optional
+- (void)pageWillChanged:(Pages *)pages;
 - (void)leftDidPullForPages:(Pages *)pages;
 - (void)rightDidPullForPages:(Pages *)pages;
 @end
